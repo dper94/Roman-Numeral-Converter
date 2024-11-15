@@ -1,0 +1,97 @@
+:root {
+  --font-family: "Space Grotesk", sans-serif;
+  --page-bg-color: #292a36;
+  --container-bg-color: #44475a;
+  --foreground-color: #f8f8f2;
+  --primary-color: #ff79c6;
+  --secondary-color: #bd93f9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  min-height: 70vh;
+  font-family: var(--font-family);
+}
+
+.page-header {
+  font-size: 4rem;
+  color: var(--foreground-color);
+  text-align: center;
+}
+
+body,
+.converter-container,
+#output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 4rem;
+}
+
+.converter-container,
+#output {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  padding: 4rem;
+  background-color: var(--container-bg-color);
+  margin: 2rem 0 6rem 0;
+  min-width: 30%;
+  max-width: 550px;
+}
+
+#output {
+  max-height: 2rem;
+  text-align: center;
+}
+
+.instructions-paragraph,
+#output {
+  font-size: 2.5rem;
+  color: var(--foreground-color);
+}
+
+#number {
+  font-size: 3rem;
+  background-color: var(--page-bg-color);
+  color: var(--foreground-color);
+}
+
+#number:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+  padding: 2rem 0;
+}
+
+#number,
+.instructions-paragraph {
+  margin-bottom: 2rem;
+}
+
+#number,
+#convert-btn {
+  font-family: inherit;
+  width: 90%;
+  height: 5rem;
+}
+
+#convert-btn {
+  font-size: 2.5rem;
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+  box-shadow: 2px 2px 3px black;
+}
+
+#convert-btn:hover {
+  cursor: pointer;
+}
